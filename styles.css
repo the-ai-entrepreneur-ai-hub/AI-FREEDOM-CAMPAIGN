@@ -471,6 +471,81 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* FAQ Section */
+.faq {
+    background-color: #f1f5f9;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.faq-item {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.faq-item h3::before {
+    content: '?';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--highlight);
+    font-weight: 800;
+}
+
+.faq-item p {
+    padding-left: 1.5rem;
+}
+
+/* TL;DR Panel */
+.tldr-panel {
+    background: rgba(255,255,255,0.1);
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 600px;
+    text-align: left;
+}
+
+.tldr-panel h3 {
+    text-align: center;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.tldr-panel ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tldr-panel li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 0.75rem;
+    color: white;
+}
+
+.tldr-panel li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--highlight);
+    font-weight: 800;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     h1 {
