@@ -255,7 +255,9 @@ section {
     gap: 3rem;
     align-items: center;
     animation: scrollLogos 30s linear infinite;
+    -webkit-animation: scrollLogos 30s linear infinite;
     width: max-content;
+    will-change: transform;
 }
 
 .logo-track img {
@@ -274,6 +276,10 @@ section {
 @keyframes scrollLogos {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
+}
+@-webkit-keyframes scrollLogos {
+    0% { -webkit-transform: translateX(0); }
+    100% { -webkit-transform: translateX(-50%); }
 }
 
 .price-highlight {
